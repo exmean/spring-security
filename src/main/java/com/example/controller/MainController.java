@@ -1,0 +1,23 @@
+package com.example.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class MainController {
+
+    @GetMapping("/")
+    public String index() {
+        return "/index";
+    }
+
+    @GetMapping("/need-role")
+    public String needRole() {
+        return "/need-role";
+    }
+
+    @GetMapping("/no-role")
+    public String noRole() {
+        return "/no-role";
+    }
+}
