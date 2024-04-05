@@ -6,18 +6,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController {
 
-    @GetMapping("/")
-    public String index() {
+    @GetMapping
+    public String indexPage() {
         return "/index";
     }
 
-    @GetMapping("/need-role")
-    public String needRole() {
-        return "/need-role";
+    @GetMapping("/auth-enter")
+    public String authEnterPage() {
+        return "/auth-enter";
     }
 
-    @GetMapping("/no-role")
-    public String noRole() {
-        return "/no-role";
+    @GetMapping("/free-enter")
+    public String freeEnterPage() {
+        return "/free-enter";
     }
 }
